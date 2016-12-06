@@ -1,0 +1,10 @@
+
+#ifndef HELPER_H_
+#define HELPER_H_
+
+#include <string>
+
+std::string to_string(int integer);
+
+
+#endif /* HELPER_H_ */
