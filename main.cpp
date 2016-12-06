@@ -5,13 +5,16 @@
 using namespace std;
 
 int main() {
-  F16 ac1(5);
-  F35 ac2(10);
-  cout << ac1.get_stats() << endl;
-  ac1.damage();
-  cout << ac1.get_stats() << endl;
-  cout << ac2.get_stats() << endl;
-  cout << ac2.get_id() << endl;
+  Carrier a("USS Marschall", 2000, 200);
+  a.add_aircraft("F16");
+  a.add_aircraft("F35");
+  a.add_aircraft("F16");
+  a.add_aircraft("F35");
+  try {
+    a.fill();
+  } catch (int err) {
+    cout << "Carrier is empty.";
+  }
 
   return 0;
 }

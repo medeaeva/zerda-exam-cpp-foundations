@@ -11,12 +11,18 @@ private:
 protected:
   unsigned int max_ammo;
   unsigned int base_damage;
+  unsigned int current_ammo;
   std::string type_name;
 public:
-  Aircraft(unsigned int ammo_level);
-  const unsigned int get_id() const;
-  void damage();
-  std::string get_stats() const;
+  virtual ~Aircraft();
+  unsigned int fight();
+  void refill(unsigned int& _typename);
+  string get_type_name();
+  string get_status();
+  unsigned int get_current_ammo();
+  unsigned int get_base_damage();
+
 };
 
 #endif /* AIRCRAFT_H_ */
+
