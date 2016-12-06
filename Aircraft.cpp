@@ -22,5 +22,5 @@ void Aircraft::damage() {
 }
 
 string Aircraft::get_stats() const {
-  return "Type: " + type_name + ", Fuel: " + to_string(ammo_level) + ", Actual damage: " + to_string(damage);
+  return "Type: " + type_name + ", Ammo: " + to_string(ammo_level) + ", Actual damage: " + to_string(damage);
 }
