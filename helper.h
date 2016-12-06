@@ -4,7 +4,7 @@
 
 #include <string>
 
-std::string to_string(int integer);
+std::string to_string(unsigned int integer);
 
 
 #endif /* HELPER_H_ */

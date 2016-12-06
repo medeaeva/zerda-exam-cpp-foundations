@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string to_string(int integer) {
+string to_string(unsigned int integer) {
   stringstream ss;
   ss << integer;
   return ss.str();
